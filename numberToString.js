@@ -2,7 +2,6 @@
 function numberToString(){
   const input = 100;
   console.log(input)
-  const fifteen = 'fifteen';
   const undred = 'undred';
   const endNumbers = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
   const weirdTeens = ['', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
@@ -15,7 +14,7 @@ function numberToString(){
     console.log(weirdTeens[input - 10])
     return weirdTeens[input - 10]
   }
-  if (input > 15) {
+  if (input > 19) {
     var digits = input.toString().split('');
     if (digits.length < 3){
       console.log(overTwenty[digits[0]] + endNumbers[digits[1]]);
